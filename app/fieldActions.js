@@ -1,7 +1,6 @@
 export function changeValue(e){
-    console.log('Change Value!')
     return {
-        type: 'VALUE_CHANGED',
+        type: 'VALOR_ALTERADO',
         payload: e.target.value
     }
 }

@@ -1,10 +1,13 @@
-const INITIAL_STATE = { value: 'Opa234567890' }
+const INITIAL_STATE = { value: 'Label Inicial' }
 
 export default function(state = INITIAL_STATE, action){
     switch(action.type){
-        case 'VALUE_CHANGED':
-            return { value: action.payload }
-
+        case 'VALOR_ALTERADO':
+            if(action.payload != ''){
+                return { value: action.payload }
+            }else{
+                return { value: 'Label Alterada' }
+            }
         default:
             return state
     }
