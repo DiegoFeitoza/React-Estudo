@@ -1,0 +1,3 @@
+https://css-tricks.com/learning-react-redux => Redux
+https://medium.com/@rajaraodv/using-middlewares-in-react-redux-apps-f7c9652610c6 => Redux
+redux.js.org/docs/basics/UsageWithReact.html
