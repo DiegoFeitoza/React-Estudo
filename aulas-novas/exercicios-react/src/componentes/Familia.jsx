@@ -5,7 +5,7 @@ export default props =>
     <div>        
         <h2>Familia {props.sobrenome}</h2>
         {/* Chamando a partir de uma função */}
-        { filhosComProps(props)  }
+        { filhosComProps(props) }
         {/* Para a leitura de todos os filhos do componente pai
             é necessário ler um map para que os filhos venham por um array
          */}

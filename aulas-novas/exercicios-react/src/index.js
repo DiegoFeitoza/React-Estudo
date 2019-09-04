@@ -3,6 +3,8 @@ import ReactDom from 'react-dom'
 
 import Familia from './componentes/Familia' 
 import Membro from './componentes/Membro'
+import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+
 // import FamiliaFeitoza from './componentes/FamiliaFeitoza' 
 // import FamiliaFreitas from './componentes/FamiliaFreitas' 
 
@@ -21,6 +23,7 @@ const elemento = document.getElementById('root')
 // ReactDom.render(Primeiro, elemento)
 ReactDom.render(
         <div>
+            <ComponenteComFuncao />
             {/* <PrimeiroComponente titulo="Hello word!" subTitulo="Testando sub" calc={3**2}/> */}
             {/* <CompA valor="Hello, i'm A!"/>
             <B valor="Hello, i'm B!"/> */}
@@ -32,11 +35,11 @@ ReactDom.render(
             <br/>
             {/* <h2>Familia Freitas</h2> */}
             {/* Comunicação direta */}
-            {/* <FamiliaFreitas sobrenome="Freitas cara de pêra"/> */}
+            {/* <FamiliaFreitas sobrenome="Freitas cara de pêra"/>
             <Familia sobrenome="Feitozaaaaaaaaa">
                 <Membro nome="Diego" />
                 <Membro nome="Larissa" />
                 <Membro nome="Danilo" />
-            </Familia>
+            </Familia> */}
         </div>    
     , elemento)
