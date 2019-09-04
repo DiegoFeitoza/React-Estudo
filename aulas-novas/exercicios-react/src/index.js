@@ -1,9 +1,15 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import Familia from './componentes/Familia' 
-import Membro from './componentes/Membro'
-import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+import Contador from './componentes/Contador'
+
+// import ComponenteClass from './componentes/ComponenteClasse'
+
+// import Pai from './componentes/Pai'
+
+// import Familia from './componentes/Familia' 
+// import Membro from './componentes/Membro'
+// import ComponenteComFuncao from './componentes/ComponenteComFuncao'
 
 // import FamiliaFeitoza from './componentes/FamiliaFeitoza' 
 // import FamiliaFreitas from './componentes/FamiliaFreitas' 
@@ -23,7 +29,10 @@ const elemento = document.getElementById('root')
 // ReactDom.render(Primeiro, elemento)
 ReactDom.render(
         <div>
-            <ComponenteComFuncao />
+            <Contador numero={0}/>
+            {/* <ComponenteClass titulo="Alô Mundão!"/> */}
+            {/* <Pai /> */}
+            {/* <ComponenteComFuncao /> */}
             {/* <PrimeiroComponente titulo="Hello word!" subTitulo="Testando sub" calc={3**2}/> */}
             {/* <CompA valor="Hello, i'm A!"/>
             <B valor="Hello, i'm B!"/> */}
@@ -31,8 +40,6 @@ ReactDom.render(
             {/* {<MultiElementos />} */}
             {/* {<h2>Familia Feitoza</h2>} */}
             {/* // {<FamiliaFeitoza />} */}
-            <br/>
-            <br/>
             {/* <h2>Familia Freitas</h2> */}
             {/* Comunicação direta */}
             {/* <FamiliaFreitas sobrenome="Freitas cara de pêra"/>
