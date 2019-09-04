@@ -29,7 +29,7 @@ const elemento = document.getElementById('root')
 // ReactDom.render(Primeiro, elemento)
 ReactDom.render(
         <div>
-            <Contador numero={0}/>
+            <Contador numeroInicial={2}/>
             {/* <ComponenteClass titulo="Alô Mundão!"/> */}
             {/* <Pai /> */}
             {/* <ComponenteComFuncao /> */}
