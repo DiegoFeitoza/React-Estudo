@@ -7,10 +7,12 @@ class Contador extends Component{
     
     maisUm = () =>{
         this.setState({numero: this.state.numero +1})
+        // this.alterarNumero(1)
     }
 
     menosUm = () => {
         this.setState({numero: this.state.numero -1})
+        // this.alterarNumero(-1)
     }
 
     alterarNumero = diferenca => {
