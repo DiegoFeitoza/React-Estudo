@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import FamiliaFeitoza from './componentes/FamiliaFeitoza' 
+import Familia from './componentes/Familia' 
+import Membro from './componentes/Membro'
+// import FamiliaFeitoza from './componentes/FamiliaFeitoza' 
 import FamiliaFreitas from './componentes/FamiliaFreitas' 
 
 // import MultiElementos from './componentes/MultiElementos' 
@@ -24,11 +26,16 @@ ReactDom.render(
             <B valor="Hello, i'm B!"/> */}
 
             {/* {<MultiElementos />} */}
-            <h2>Familia Feitoza</h2>
-            {<FamiliaFeitoza />}
+            {/* {<h2>Familia Feitoza</h2>} */}
+            {/* // {<FamiliaFeitoza />} */}
             <br/>
             <br/>
             <h2>Familia Freitas</h2>
-            {<FamiliaFreitas />}
+            {<FamiliaFreitas sobrenome="Freitas cara de pêra"/>}
+            <Familia sobrenome="Feitoza">
+                <Membro nome="Diego" />
+                <Membro nome="Larissa" />
+                <Membro nome="Danilo" />
+            </Familia>
         </div>    
     , elemento)

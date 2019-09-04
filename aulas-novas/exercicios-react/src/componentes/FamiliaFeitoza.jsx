@@ -3,7 +3,7 @@ import Membro from './Membro'
 
 export default props =>
     <div>
-        <Membro nome="Diego" sobrenome="Feitoza" />
-        <Membro nome="Larissa" sobrenome="Feitoza" />
-        <Membro nome="Danilo" sobrenome="Feitoza" />
+        <Membro nome="Diego" sobrenome="{props.sobrenome}" />
+        <Membro nome="Larissa" sobrenome="{props.sobrenome}" />
+        <Membro nome="Danilo" sobrenome="{props.sobrenome}" />
     </div>
