@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import MultiElementos from './componentes/MultiElementos' 
+import FamiliaFeitoza from './componentes/FamiliaFeitoza' 
+import FamiliaFreitas from './componentes/FamiliaFreitas' 
 
+// import MultiElementos from './componentes/MultiElementos' 
 // import {CompA, CompB as B} from './componentes/DoisComponentes'
 
 
@@ -12,7 +14,8 @@ import MultiElementos from './componentes/MultiElementos'
 // import PrimeiroComponente from './componentes/PrimeiroComponente'
 
 const elemento = document.getElementById('root')
-const jsx = <h1>Hello Word</h1>
+
+// const jsx = <h1>Hello Word</h1>
 // ReactDom.render(Primeiro, elemento)
 ReactDom.render(
         <div>
@@ -20,6 +23,12 @@ ReactDom.render(
             {/* <CompA valor="Hello, i'm A!"/>
             <B valor="Hello, i'm B!"/> */}
 
-            {<MultiElementos />}
+            {/* {<MultiElementos />} */}
+            <h2>Familia Feitoza</h2>
+            {<FamiliaFeitoza />}
+            <br/>
+            <br/>
+            <h2>Familia Freitas</h2>
+            {<FamiliaFreitas />}
         </div>    
     , elemento)
