@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-//É possivel renomear o componente importado com o as
-import {CompA, CompB as B} from './componentes/DoisComponentes'
+import MultiElementos from './componentes/MultiElementos' 
+
+// import {CompA, CompB as B} from './componentes/DoisComponentes'
 
 
+//É possivel renomear o componente importado com o as novo_nome
+// import {CompA, CompB as B} from './componentes/DoisComponentes'
 
 // import PrimeiroComponente from './componentes/PrimeiroComponente'
 
@@ -14,7 +17,9 @@ const jsx = <h1>Hello Word</h1>
 ReactDom.render(
         <div>
             {/* <PrimeiroComponente titulo="Hello word!" subTitulo="Testando sub" calc={3**2}/> */}
-            <CompA valor="Hello, i'm A!"/>
-            <B valor="Hello, i'm B!"/>
+            {/* <CompA valor="Hello, i'm A!"/>
+            <B valor="Hello, i'm B!"/> */}
+
+            {<MultiElementos />}
         </div>    
     , elemento)
